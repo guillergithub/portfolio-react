@@ -1,0 +1,10 @@
+.about-container {
+    background-image: url('../asserts/bg-grey-texture2.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
