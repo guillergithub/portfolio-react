@@ -9,10 +9,9 @@ import './asserts/querys/querys.css'
 
 import Routes from './components/Routes'
 import ConfigBtn from './components/ConfigBtn';
-
-
 import Navbar from './components/Navbar'
-
+import { ThemeProvider } from './context/ThemeContext';
+import { LenguageProvider } from './context/LenguageContext'
 
 
 function App() {
@@ -20,11 +19,9 @@ function App() {
   const [ showMenu, setShowMenu ] = useState(false)
   const [ hiddenMenu, setHiddenMenu ] = useState('')
   const [ showPalette, setShowPalette ] = useState(false)
-  // const [ hiddenPalette, setHiddenPalette ] = useState('')
   
-
   const onScroll = (e) => {
-    console.log(e)
+ 
   }
 
   const handleMenu = () => {
@@ -33,17 +30,23 @@ function App() {
   }
 
   const handlePalette = () => {
-    setShowPalette(!showPalette)
-    // setHiddenPalette('hiden-palette')
-    console.log(showPalette)
+    setShowPalette(!showPalette)   
+    
   }
 
+  
+
   return (
-    <div className="App">
-      <Navbar handleMenu={handleMenu} showMenu={showMenu} hiddenMenu={hiddenMenu} />   
-      <ConfigBtn handlePalette={handlePalette} showPalette={showPalette}/>
-      <Routes onScroll={onScroll}/>
-    </div>
+    <ThemeProvider>
+    <LenguageProvider>
+
+      <div className={`app `}>
+        <Navbar  handleMenu={handleMenu} showMenu={showMenu} hiddenMenu={hiddenMenu} />   
+        <ConfigBtn handlePalette={handlePalette} showPalette={showPalette}/>
+        <Routes  onScroll={onScroll}/>
+      </div>
+    </LenguageProvider>
+    </ThemeProvider>
   );
 }
 

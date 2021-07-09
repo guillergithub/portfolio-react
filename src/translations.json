@@ -1,0 +1,22 @@
+ {
+    "es": {
+      "headerLight": "Claro",
+      "headerDark": "Oscuro",
+      "navLinkHome": "Inicio",
+      "navLinkAbout": "Acerca de mi",   
+      "navLinkProjects": "Projects",    
+      "navLinkContact": "Contacto",      
+      "introducesMe": "soy",
+      "mainWelcome": "Bienvenid@"     
+    },
+    "en": {
+      "headerLight": "Light",
+      "headerDark": "Dark",
+      "navLinkHome": "Home",
+      "navLinkAbout": "About",   
+      "navLinkProjects": "Projects",  
+      "navLinkContact": "Contact",      
+      "introducesMe": "i'm",
+      "mainWelcome": "Welcome"     
+    }
+  }

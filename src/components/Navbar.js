@@ -1,17 +1,21 @@
+import { NavLink } from 'react-router-dom'
+
 import logo from '../asserts/logo.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
-import { NavLink } from 'react-router-dom'
 
 import NavMenu from './NavMenu'
 
-const Navbar = ( { showMenu, handleMenu, hiddenMenu, handlePalette } ) => {
+
+const Navbar = ( { showMenu, handleMenu, hiddenMenu, handlePalette, translations } ) => {
     
+  
+
     return (
         <nav>
-            <NavLink to='/' exact className='logo-container' >
+            <NavLink to='/' exact className={`logo-container `} >
                <img className='logo-img' src={logo} alt='logo'/>
                <h2 className='logo-text'>Slzar</h2>
             </NavLink>
@@ -26,7 +30,7 @@ const Navbar = ( { showMenu, handleMenu, hiddenMenu, handlePalette } ) => {
                 <NavLink to='/contact' activeClassName='active-dot' exact>&nbsp;</NavLink>
             </div>
             
-            <NavMenu className={hiddenMenu} handleMenu={handleMenu} showMenu={showMenu} hiddenMenu={hiddenMenu}/>
+            <NavMenu className={hiddenMenu} handleMenu={handleMenu} showMenu={showMenu} hiddenMenu={hiddenMenu} translations={translations}/>
            
            
         </nav>
