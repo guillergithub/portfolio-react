@@ -13,16 +13,18 @@ const NavMenu = ({ handleMenu, showMenu }) => {
 
     const { lenguage } = useContext(LenguageContext)
 
+    
+
     return (
 
         <div className={(showMenu) ? 'menu' : `menu-hidden` }>     
                     <FontAwesomeIcon className='menu-close-btn' icon={faTimes} onClick={handleMenu}/>
 
                     <ul className={`menu-list `}>
-                        <li><NavLink to='/' activeClassName='active' exact>{translations[lenguage].navLinkHome}</NavLink></li>                
-                        <li><NavLink to='/about' activeClassName='active' exact>{translations[lenguage].navLinkAbout}</NavLink></li>
-                        <li><NavLink to='/projects' activeClassName='active' exact>{translations[lenguage].navLinkProjects}</NavLink></li>
-                        <li><NavLink to='/contact' activeClassName='active' exact>{translations[lenguage].navLinkContact}</NavLink></li>
+                        <li><NavLink to='/'  activeClassName='active' exact onClick={handleMenu}>{translations[lenguage].navLinkHome}</NavLink></li>                
+                        <li><NavLink to='/about' activeClassName='active' exact onClick={handleMenu}>{translations[lenguage].navLinkAbout}</NavLink></li>
+                        <li><NavLink to='/projects' activeClassName='active' exact onClick={handleMenu}>{translations[lenguage].navLinkProjects}</NavLink></li>
+                        <li><NavLink to='/contact' activeClassName='active' exact onClick={handleMenu}>{translations[lenguage].navLinkContact}</NavLink></li>
                     </ul>
                     
                     <div className='menu-footer'>

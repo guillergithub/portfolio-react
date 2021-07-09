@@ -2,21 +2,25 @@
     "es": {
       "headerLight": "Claro",
       "headerDark": "Oscuro",
+      "navLinkContactMe": "contactame",
       "navLinkHome": "Inicio",
       "navLinkAbout": "Acerca de mi",   
       "navLinkProjects": "Projects",    
       "navLinkContact": "Contacto",      
-      "introducesMe": "soy",
-      "mainWelcome": "Bienvenid@"     
+      "mainWelcome": "¡Hola mundo!",     
+      "introducesMe": "Me llamo",
+      "introducesDeveloper": "soy desarrollador web."
     },
     "en": {
       "headerLight": "Light",
       "headerDark": "Dark",
+      "navLinkContactMe": "contact me",
       "navLinkHome": "Home",
       "navLinkAbout": "About",   
       "navLinkProjects": "Projects",  
       "navLinkContact": "Contact",      
-      "introducesMe": "i'm",
-      "mainWelcome": "Welcome"     
+      "mainWelcome": "Hello World!",     
+      "introducesMe": "I'm",
+      "introducesDeveloper": "a web developer."
     }
   }

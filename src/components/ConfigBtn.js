@@ -11,7 +11,7 @@ import LenguageContext from '../context/LenguageContext'
 function ConfigBtn({ handlePalette, showPalette }) {
 
     const { theme, handleTheme } = useContext(ThemeContext)
-    const { lenguage, handleLenguage } = useContext(LenguageContext)
+    const { lenguage } = useContext(LenguageContext)
 
     return (
         <div className={showPalette ? `config-container ${theme}` : `config-container hidden-config ${theme}` }>
@@ -30,11 +30,6 @@ function ConfigBtn({ handlePalette, showPalette }) {
                     <select onChange={handleTheme}>                        
                         <option value="light" id="light">{translations[lenguage].headerLight}</option>                        
                         <option value="dark" id="dark">{translations[lenguage].headerDark}</option>
-                    </select>
-
-                    <select onChange={handleLenguage}>
-                        <option value="es" id='es'>Español</option>
-                        <option value="en" id='en'>English</option>
                     </select>
                 </div>
             </div>

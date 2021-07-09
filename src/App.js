@@ -1,52 +1,13 @@
-import { useState } from 'react';
-
-
 import './App.css';
-import './styles/navbar.css';
-import './styles/Home.css'
-import './styles/About.css'
-import './asserts/querys/querys.css'
-
-import Routes from './components/Routes'
-import ConfigBtn from './components/ConfigBtn';
-import Navbar from './components/Navbar'
-import { ThemeProvider } from './context/ThemeContext';
-import { LenguageProvider } from './context/LenguageContext'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import MyPage from './components/MyPage';
 
 function App() {
 
-  const [ showMenu, setShowMenu ] = useState(false)
-  const [ hiddenMenu, setHiddenMenu ] = useState('')
-  const [ showPalette, setShowPalette ] = useState(false)
-  
-  const onScroll = (e) => {
- 
-  }
-
-  const handleMenu = () => {
-    setShowMenu(!showMenu)    
-    setHiddenMenu('menu-hidden')    
-  }
-
-  const handlePalette = () => {
-    setShowPalette(!showPalette)   
-    
-  }
-
-  
-
-  return (
-    <ThemeProvider>
-    <LenguageProvider>
-
-      <div className={`app `}>
-        <Navbar  handleMenu={handleMenu} showMenu={showMenu} hiddenMenu={hiddenMenu} />   
-        <ConfigBtn handlePalette={handlePalette} showPalette={showPalette}/>
-        <Routes  onScroll={onScroll}/>
-      </div>
-    </LenguageProvider>
-    </ThemeProvider>
+  return (    
+    <>
+      <MyPage />
+    </>
   );
 }
 
