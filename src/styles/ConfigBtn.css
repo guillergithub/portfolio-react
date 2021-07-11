@@ -1,0 +1,106 @@
+.btn-primary {
+    margin-top: .5rem;
+    font-size: 1.3rem;
+    background: tomato;
+    border: white;
+}
+
+.btn-primary:hover {
+    margin-top: .5rem;
+    font-size: 1.3rem;
+    background: rgb(203, 94, 74);
+}
+
+.btn-primary:focus {
+    margin-top: .5rem;
+    font-size: 1.3rem;
+    background: tomato;
+}
+
+.configText {
+    font-size: 1.3rem;   
+    margin-top: 1rem;
+}
+
+.config-container {
+    position: absolute;    
+    bottom: 2rem;
+    z-index: 999;
+    display: flex;
+    transition: all 1s;       
+    align-items: flex-start;     
+
+  }
+
+  .color {
+    display: inline-block;
+    width: 30px;
+    height: 30px;    
+    margin: 10px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+  } 
+
+  .hidden-config {
+    left: -220px;
+    transition: all 1s;
+  }
+
+.icon-config {
+    background: rgb(77, 76, 76);
+    color: rgba(255, 255, 255, 0.866);
+    padding: 3px;
+    border-radius: 0 4px 4px 0;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+  }
+
+  .icon-config-container {      
+      cursor: pointer;
+  }
+
+  .palette-container{
+    width: 220px;
+    height:200px;
+    background: rgb(255, 255, 255);
+    border-radius: 0 0 4px 0;   
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+  }
+
+  /* ========== COLORS ========== */
+
+.color1 {
+    background: #837d82;
+}
+
+.color2 {
+  background: #81B214;
+}
+
+.color3 {
+  background: #D54062;
+}
+
+.color4 {
+  background: #8FCFD1;
+}
+
+.color5 {
+  background: #F7FD04;
+}
+
+.color6 {
+  background: #CC9B6D;
+}
+
+.color7 {
+  background: #9EDE73;
+}
+ 
+.color8 {
+    background: #342EAD;
+  }
+

@@ -22,7 +22,5 @@ ul {
   display: flex;
 }
 
-.dark {
-  filter: invert(1);
-}
+
 

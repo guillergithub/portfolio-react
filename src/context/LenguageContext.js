@@ -8,8 +8,7 @@ const LenguageProvider = ({ children }) => {
 
         
         const handleLenguage = () => {
-            console.log(lenguage)
-            
+                        
             if(lenguage === 'es') {
                 setLenguage('en')
             } else {

@@ -1,26 +1,46 @@
-@media (min-width: 1400px) {
-    
-    * {
-        font-size: 18px;
-    }
-}
-
 @media (max-width: 990px) { 
     .link-pages-container>li>a {
         display: none;
     }   
+
+    .greetings-container {
+        margin-left: 2.2rem;
+    }
+
+    .profile-container {
+        margin-right: 2.2rem;
+    }
+
+    .link-pages-container {
+        margin-left: 0rem;
+      }
 }
 
 @media (min-width: 768px) {     
+    /* .greetings-container {
+        margin-left: 1rem;
+    } */
+
     .menu {
         top: 0;
         left: 60vw;
     }   
 
+    .menu-hidden {
+        left: 60vw;
+    }
+
+
+
 }
 
 @media (max-width: 620px) {   
+/* 
+    .greetings-container {
+        margin-left: 1rem;
+    } */
 
+    
     .icon-lenguage {
         width: 100%;
         margin-left: -2rem;

@@ -16,24 +16,23 @@ function ConfigBtn({ handlePalette, showPalette }) {
     return (
         <div className={showPalette ? `config-container ${theme}` : `config-container hidden-config ${theme}` }>
             <div className='palette-container'>
-                <p>Color Switcher</p>
-                <br/>
+                <p className="configText">{translations[lenguage].configColorSwitcher}</p>
+              
                 <div>
-                    <span className='color'> </span>
-                    <span className='color'> </span>
-                    <span className='color'> </span>
-                    <span className='color'> </span>
-                    <span className='color'> </span>
-                    <span className='color'> </span>
+                    <button className='color color1' alt='grey' value="color1" onClick={handleTheme}> </button>
+                    <button className='color color2' value="color2" onClick={handleTheme}> </button>
+                    <button className='color color3' value="color3" onClick={handleTheme}> </button>
+                    <button className='color color4' value="color4" onClick={handleTheme}> </button>
+                    <button className='color color5' value="color5" onClick={handleTheme}> </button>
+                    <button className='color color6' value="color6" onClick={handleTheme}> </button>
+                    <button className='color color7' value="color7" onClick={handleTheme}> </button>
+                    <button className='color color8' value="color8" onClick={handleTheme}> </button>
                 </div>
                 <div>
-                    <select onChange={handleTheme}>                        
-                        <option value="light" id="light">{translations[lenguage].headerLight}</option>                        
-                        <option value="dark" id="dark">{translations[lenguage].headerDark}</option>
-                    </select>
+                    <button className='btn btn-primary' onClick={handleTheme}>{translations[lenguage].configPredetermined}</button>                
                 </div>
             </div>
-            <div className='icon-container'>
+            <div className='icon-config-container'>
                 <FontAwesomeIcon className='icon-config' onClick={handlePalette} icon={faCog}/>
             </div>
 

@@ -8,10 +8,12 @@ import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-
 
 import translations from '../translations' 
 import LenguageContext from '../context/LenguageContext'
+import ThemeContext from '../context/ThemeContext'
 
 const Home = ({ onScroll }) => {
 
     const { lenguage } = useContext(LenguageContext)
+    const { theme } = useContext(ThemeContext)  
     
 
     return (
@@ -19,17 +21,17 @@ const Home = ({ onScroll }) => {
         <motion.div onScroll={onScroll(window.onscroll)} animate={{ y: 0 }} initial={{y: '100%'}} transition={{ ease: "easeOut", duration: .5 }} className='home-container'>
 
             <div className='greetings-container'>
-                <h1 className='hello-world'>{translations[lenguage].mainWelcome}</h1>
+                <h1 className='hello-world' style={{color: theme}}>{translations[lenguage].mainWelcome}</h1>
                 <h3 className='im'>{translations[lenguage].introducesMe}</h3>
                 
                 <div className='fullname-container'>
-                    <h1 className='firstname'>Guillermo </h1>
-                    <h1 className='lastname'>Salazar</h1>
+                    <h1 className='firstname' style={{color: theme}} >Guillermo </h1>
+                    <h1 className='lastname'  style={{color: theme}} >Salazar</h1>
                 </div>
 
                 <p className='web-developer'>{translations[lenguage].introducesDeveloper}</p>
 
-                <div className='icon-home-container mt-5'>
+                <div className='icon-home-container mt-5' style={{background: theme}}>
                     <a target='_blank' rel='noreferrer' href="https://www.linkedin.com/in/guillermoesalazar/"><FontAwesomeIcon className='icon' icon={faLinkedin}/></a>
                     <a target='_blank' rel='noreferrer' href="https://www.github.com/guillergithub"><FontAwesomeIcon className='icon' icon={faGithub}/></a>
                     <a target='_blank' rel='noreferrer' href="https://www.instagram.com/guillershoot"><FontAwesomeIcon className='icon' icon={faInstagram}/></a>                                        
