@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
+
 
 import "../styles/navbar.css";
 import "../styles/ConfigBtn.css"
@@ -21,6 +22,10 @@ const MyPage = () => {
   const [hiddenMenu, setHiddenMenu] = useState("");
   const [showPalette, setShowPalette] = useState(false);
 
+  const ref = useRef({})
+
+
+  console.log(ref)
   const onScroll = (e) => {};
 
   const handleMenu = () => {
@@ -39,7 +44,7 @@ const MyPage = () => {
           <Navbar handleMenu={handleMenu} showMenu={showMenu} hiddenMenu={hiddenMenu} />
           <NavMenu className={hiddenMenu} handleMenu={handleMenu} showMenu={showMenu} hiddenMenu={hiddenMenu} translations={translations} />
           <ConfigBtn handlePalette={handlePalette} showPalette={showPalette} />
-          <Routes onScroll={onScroll} />
+          <Routes onScroll={onScroll} ref={ref}/>
         </div>
       </LenguageProvider>
     </ThemeProvider>

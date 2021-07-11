@@ -8,12 +8,12 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
 import '../styles/navbar.css'
 import LenguageContext from '../context/LenguageContext'
+import ThemeContext from '../context/ThemeContext'
 
 const NavMenu = ({ handleMenu, showMenu }) => {
 
     const { lenguage } = useContext(LenguageContext)
-
-    
+    const { theme } = useContext(ThemeContext)    
 
     return (
 
@@ -21,10 +21,10 @@ const NavMenu = ({ handleMenu, showMenu }) => {
                     <FontAwesomeIcon className='menu-close-btn' icon={faTimes} onClick={handleMenu}/>
 
                     <ul className={`menu-list `}>
-                        <li><NavLink to='/'  activeClassName='active' exact onClick={handleMenu}>{translations[lenguage].navLinkHome}</NavLink></li>                
-                        <li><NavLink to='/about' activeClassName='active' exact onClick={handleMenu}>{translations[lenguage].navLinkAbout}</NavLink></li>
-                        <li><NavLink to='/projects' activeClassName='active' exact onClick={handleMenu}>{translations[lenguage].navLinkProjects}</NavLink></li>
-                        <li><NavLink to='/contact' activeClassName='active' exact onClick={handleMenu}>{translations[lenguage].navLinkContact}</NavLink></li>
+                        <li><NavLink to='/'  activeStyle={{color: theme}} exact onClick={handleMenu}>{translations[lenguage].navLinkHome}</NavLink></li>                
+                        <li><NavLink to='/about' activeStyle={{color: theme}} exact onClick={handleMenu}>{translations[lenguage].navLinkAbout}</NavLink></li>
+                        <li><NavLink to='/projects' activeStyle={{color: theme}} exact onClick={handleMenu}>{translations[lenguage].navLinkProjects}</NavLink></li>
+                        <li><NavLink to='/contact' activeStyle={{color: theme}} exact onClick={handleMenu}>{translations[lenguage].navLinkContact}</NavLink></li>
                     </ul>
                     
                     <div className='menu-footer'>
