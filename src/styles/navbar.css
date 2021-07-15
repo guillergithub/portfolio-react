@@ -52,8 +52,9 @@ nav {
     font-size: 3rem;
     margin-right: 20rem;
     cursor: pointer;    
-    position: fixed;    
-    right: 5rem;
+    position: fixed;        
+    right: -7rem;
+    top: 5.2rem;
   }
 
   .icon-menu {
@@ -81,9 +82,15 @@ nav {
     cursor: pointer;
   }
 
-  .icon-lenguage {
-    right: -7rem;
-    top: 5.2rem;
+ 
+  .icon-language-text {
+    font-weight: bold;
+    font-size: .9rem;
+    margin-right: 20rem;
+    cursor: pointer;    
+    position: fixed;        
+    right: -6.7rem;
+    top: 4rem;
   }
 
 

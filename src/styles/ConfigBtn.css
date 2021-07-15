@@ -18,18 +18,17 @@
 }
 
 .configText {
-    font-size: 1.3rem;   
-    margin-top: 1rem;
+    font-size: 1.3rem;       
 }
 
 .config-container {
     position: absolute;    
-    bottom: 2rem;
+    bottom: 0rem;
     z-index: 999;
     display: flex;
     transition: all 1s;       
     align-items: flex-start;     
-
+  
   }
 
   .color {
@@ -43,7 +42,7 @@
   } 
 
   .hidden-config {
-    left: -220px;
+    left: -210px;
     transition: all 1s;
   }
 
@@ -61,13 +60,14 @@
   }
 
   .palette-container{
-    width: 220px;
-    height:200px;
+    width: 210px;
+    height:190px;
     background: rgb(255, 255, 255);
     border-radius: 0 0 4px 0;   
     display: flex;
     flex-direction: column;    
     align-items: center;
+    justify-content: center;
   }
 
   /* ========== COLORS ========== */
@@ -93,14 +93,14 @@
 }
 
 .color6 {
-  background: #CC9B6D;
+  background: #e47914;
 }
 
 .color7 {
-  background: #9EDE73;
+  background: #1543f9;
 }
  
 .color8 {
-    background: #342EAD;
+    background: #9a13bf;
   }
 

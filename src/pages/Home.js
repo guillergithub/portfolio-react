@@ -19,15 +19,17 @@ const Home = ({ onScroll }) => {
         <motion.div animate={{ y: 0 }} initial={{y: '100%'}} tranition={{ ease: "easeOut", duration: .5 }} className='home-container'>
 
             <div className='greetings-container'>
-                <h1 className='hello-world' style={{color: theme}}>{translations[lenguage].mainWelcome}</h1>
-                <h3 className='im'>{translations[lenguage].introducesMe}</h3>
-                
-                <div className='fullname-container'>
-                    <h1 className='firstname' style={{color: theme}} >Guillermo </h1>
-                    <h1 className='lastname'  style={{color: theme}} >Salazar</h1>
-                </div>
+                <div className="greetings">
+                    <h1 className='hello-world' style={{color: theme}}>{translations[lenguage].mainWelcome}</h1>
+                    <h3 className='im'>{translations[lenguage].introducesMe}</h3>
+                    
+                    <div className='fullname-container'>
+                        <h1 className='firstname' style={{color: theme}} >Guillermo </h1>
+                        <h1 className='lastname'  style={{color: theme}} >Salazar</h1>
+                    </div>
 
-                <p className='web-developer'>{translations[lenguage].introducesDeveloper}</p>
+                    <p className='web-developer'>{translations[lenguage].introducesDeveloper}</p>
+                </div>
 
                 <div className='icon-home-container mt-5' style={{background: theme}}>
                     <a target='_blank' rel='noreferrer' href="https://www.linkedin.com/in/guillermoesalazar/"><FontAwesomeIcon className='icon' icon={faLinkedin}/></a>

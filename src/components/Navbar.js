@@ -56,10 +56,11 @@ const Navbar = ({ showMenu, handleMenu, hiddenMenu, handlePalette }) => {
             </ul>
 
             
-            {/* ============= LENGUAGE ICON ============= */}
-          <div>
-            <FontAwesomeIcon className="icon-lenguage" icon={faLanguage} onClick={handleLenguage}/>
-          </div>
+            {/* ============= LANGUAGE ICON ============= */}          
+            <div onClick={handleLenguage}>
+              <FontAwesomeIcon className="icon-lenguage" icon={faLanguage}/>
+              <p className='icon-language-text'>EN / ES</p>
+            </div>
           </div>
 
 

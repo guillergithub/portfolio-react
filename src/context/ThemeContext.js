@@ -23,11 +23,11 @@ const ThemeProvider = ({ children }) => {
         } else if (e.target.value === 'color5') {
           setTheme('#F7FD04')
         } else if (e.target.value === 'color6') {
-          setTheme('#CC9B6D')
+          setTheme('#e47914')
         } else if (e.target.value === 'color7') {
-          setTheme('#9EDE73')
+          setTheme('#1543f9')
         } else if (e.target.value === 'color8') {
-          setTheme('#342EAD')
+          setTheme('#9a13bf')
         } else {
           setTheme('tomato')
         }
