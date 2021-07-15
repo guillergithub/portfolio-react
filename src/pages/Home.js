@@ -2,7 +2,6 @@ import photo from '../asserts/me-playing.png'
 import { motion } from 'framer-motion'
 import { useContext } from 'react'
 
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
@@ -13,12 +12,11 @@ import ThemeContext from '../context/ThemeContext'
 const Home = ({ onScroll }) => {
 
     const { lenguage } = useContext(LenguageContext)
-    const { theme } = useContext(ThemeContext)  
-    
+    const { theme } = useContext(ThemeContext)      
 
     return (
              
-        <motion.div onScroll={onScroll(window.onscroll)} animate={{ y: 0 }} initial={{y: '100%'}} transition={{ ease: "easeOut", duration: .5 }} className='home-container'>
+        <motion.div animate={{ y: 0 }} initial={{y: '100%'}} tranition={{ ease: "easeOut", duration: .5 }} className='home-container'>
 
             <div className='greetings-container'>
                 <h1 className='hello-world' style={{color: theme}}>{translations[lenguage].mainWelcome}</h1>

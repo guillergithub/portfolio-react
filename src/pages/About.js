@@ -7,7 +7,7 @@ const About = () => {
     const { theme } = useContext(ThemeContext)
  
     return (
-        <motion.div animate={{opacity: 1}} initial={{opacity: 0}} exit={{opacity: 0}}  className={`about-container ${theme}`}>
+        <motion.div animate={{opacity: 1}} initial={{opacity: 0}} exit={{opacity: 0}} className={`about-container ${theme}`}>
             <h3>About Me</h3>
             
             <div className="cards-container">

@@ -1,6 +1,6 @@
-const Contact = () => {
+const Contact = ({ onScroll }) => {
     return (
-        <div>
+        <div onScroll={onScroll}>
             Contact
         </div>
     )

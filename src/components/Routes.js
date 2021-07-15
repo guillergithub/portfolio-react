@@ -9,24 +9,24 @@ import Contact from '../pages/Contact'
 
 
 
-const Routes = ({ onScroll }) => {
+const Routes = ({ handleBgProjects, bg }) => {
 
     
 
     return (        
         <AnimatePresence >
             <Switch>
-                <Route path='/' exact>
-                    <Home  onScroll={onScroll} />
+                <Route path='/' exact >
+                    <Home  />
                 </Route>
                 <Route path='/about'>
-                    <About />
+                    <About/>
                 </Route>
                 <Route path='/projects'>
-                    <Projects />
+                    <Projects handleBgProjects={handleBgProjects} bg={bg}/>
                 </Route>
                 <Route path='/contact'>
-                    <Contact />
+                    <Contact/>
                 </Route>
             </Switch>
         </AnimatePresence>   

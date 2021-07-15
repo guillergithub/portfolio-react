@@ -1,6 +1,6 @@
 
 * {
-  font-size: 13px;
+  font-size: 11px;
 }
 
 a {
@@ -22,7 +22,7 @@ ul {
   text-align: center;  
   min-height: 100vh;
   min-width: 100vw;
-  background: #282827;
+  /* background: #282827; */
 }
 
 

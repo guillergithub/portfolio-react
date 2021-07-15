@@ -17,10 +17,10 @@
 }
 
 @media (min-width: 768px) {     
-    /* .greetings-container {
-        margin-left: 1rem;
-    } */
-
+    .projects-list>li>a {
+        margin: auto;
+        
+    }
     .menu {
         top: 0;
         left: 60vw;
@@ -35,11 +35,16 @@
 }
 
 @media (max-width: 620px) {   
-/* 
-    .greetings-container {
-        margin-left: 1rem;
-    } */
 
+    .projects-list>li>span {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+
+    .projects-list>li>div>a {
+        font-size: 3rem;
+        line-height: 8rem;
+    }
     
     .icon-lenguage {
         width: 100%;
@@ -55,7 +60,7 @@
     }
 
     .dots-container {
-        right: 4rem;
+        right: 2rem;
     }
 
     

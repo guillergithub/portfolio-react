@@ -13,7 +13,7 @@ body {
 }
 
 .lastname, .firstname {
-    font-size: 3.8rem;    
+    font-size: 5rem;    
     font-weight: bold;
     line-height: 3.2rem;
     transition: all 0.5s;
@@ -38,7 +38,7 @@ body {
 }
 
 .hello-world {
-    font-size: 5rem;
+    font-size: 3.8rem;
     margin-bottom: 2.5rem;
     font-weight: bold;
     transition: all 0.5s;

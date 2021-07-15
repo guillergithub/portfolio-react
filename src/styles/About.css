@@ -2,8 +2,8 @@
     background-image: url('../asserts/bg-grey-texture2.jpg'); 
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
-    min-width: 100vw;
+    min-height: 100.1vh;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
